@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/3af4a7f7f7.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        .navbar-nav a {
+            font-size: 1.4rem;
+        }
+
+        .navbar-brand {
+            color: #EC4847 !important;
+        }
+
+        .reg-link {
+            color: #222525;
+        }
+
+        .cover {
+            background-image: url("assets/img/home_cover.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+        }
+
+        #badge1{
+            background-color: rgb(255, 99, 132);
+        }
+        #badge2{
+            background-color: rgb(132, 99, 255);
+        }
+    </style>
+
+    <title>Graphes - Big Brain Time</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg pb-3" style="background-color: #FFFFFF;">
+                <a class="navbar-brand" href="index.html#page-top" style="font-size: 1.8rem">Big Brain Time</a>
+                <ul class="navbar-nav mr-auto">
+                    <li><a class="nav-link reg-link" href="#pitch">Qu'est-ce que Big Brain Time ?</a></li>
+                    <li><a class="nav-link reg-link" href="#applications">Applications</a></li>
+                    <li><a class="nav-link reg-link" href="demo.html">Démo</a></li>
+                    <li><a class="nav-link reg-link" href="#about">À propos</a></li>
+                    <li><a class="nav-link reg-link" href="#contacts">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li><a class="nav-link btn btn-outline-primary mr-2" href="login.html">Login</a></li>
+                    <li><a class="nav-link btn btn-primary" href="userboard.html">Projets des utilisateurs</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+
+            <div class="jumbotron row align-items-center mt-4">
+                <div class="col-md-4">
+                    <h4>Téléchargements d'applis similaires :</h4>
+                    <ul>
+                        <li>Deliveroo <span id="badge1" class="badge badge-pill"> </span></li>
+                        <li>UberEats <span id="badge2" class="badge badge-pill"> </span></li>
+                    </ul>
+                </div>
+                <canvas id="dwnldsBarChart" class="col-md-8"></canvas>
+            </div>
+
+            <div class="jumbotron row align-items-center mt-4">
+                <div class="col-xs-12">
+                    <h4>Originalité - Proximité du concept avec d'autres applications</h4>
+                </div>
+                <canvas id="bubbleChart" class="col-xs-12 mt-4"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Chart.js script-->
+    <script src="myChart.js"></script>
+    <script src="randomBubble.js"></script>
+</body>
+
+</html>
